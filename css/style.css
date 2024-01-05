@@ -78,12 +78,69 @@ h2 {
 }
 
 .discover {
+    display: flex;
+    justify-content: center;
     background: url(/img/header_bg.png), lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 1573px;
     position: relative;
+}
+
+.discover__content {
+    position: relative;
+    top: 268px;
+    z-index: 5;
+}
+
+.discover__socials {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    z-index: 5;
+    position: absolute;
+    top: 357px;
+    left: 40px;
+    align-items: center;
+}
+
+.discover__socials-text {
+    writing-mode: vertical-rl;
+}
+
+.discover__socials-link {
+    width: fit-content;
+}
+
+.discover__content-text {
+    position: relative;
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    color: #FFC178;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.discover__content-text::before {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 2px;
+    background: #FFC178;
+}
+
+.discover__content-title {
+    padding: 32px 0 126px;
+}
+
+.Scroll-down__button {
+    display: flex;
+    column-gap: 9px;
+    margin: 0 auto;
 }
 
 .discover::after {
