@@ -118,7 +118,7 @@ h2 {
 .discover {
     display: flex;
     justify-content: center;
-    background: url(./img/header_bg.png), lightgray 50% / cover no-repeat;
+    background: url(/img/header_bg.png), lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -173,8 +173,6 @@ h2 {
     width: fit-content;
 }
 
-.discover__content-text {}
-
 .discover__content-title {
     padding: 32px 0 126px;
 }
@@ -196,12 +194,85 @@ h2 {
     margin: 0 150px;
 }
 
+.location1__content-image {
+    position: relative;
+    top: -100px;
+}
+
 .location1__content--text__block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 27px;
     max-width: 632px;
+}
+
+.slider {
+    margin: 0 150px;
+    overflow: hidden;
+}
+
+.slider__line {
+    display: flex;
+    position: relative;
+    transition: 0.6s;
+    width: 300%;
+}
+
+.slider__line-slide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(/img/slider_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 985px;
+    width: calc(100%/3);
+}
+
+.slider__line-slide__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 984px;
+    padding-bottom: 41px;
+}
+
+.slider__line-slide__content h2 {
+    padding: 24px 0;
+}
+
+.slider__line-slide__content button {
+    padding-top: 39px;
+}
+
+.slider__line-slide__content-text {
+    color: var(--accent-color);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+.slider__line-slide__content-text::before {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 2px;
+    background: #FFC178;
+}
+
+.slider__line-slide__content-text::after {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 2px;
+    background: #FFC178;
 }
 
 .location2 {
