@@ -118,7 +118,7 @@ h2 {
 .discover {
     display: flex;
     justify-content: center;
-    background: url(/img/header_bg.png), lightgray 50% / cover no-repeat;
+    background: url(./img/header_bg.png), lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
