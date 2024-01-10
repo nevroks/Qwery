@@ -151,7 +151,7 @@ h3 {
 .discover {
     display: flex;
     justify-content: center;
-    background: url(../img/HeaderBg.png), lightgray 50% / cover no-repeat;
+    background-image: url(../img/HeaderBg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
