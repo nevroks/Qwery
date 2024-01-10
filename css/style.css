@@ -100,7 +100,7 @@ h3 {
 }
 
 .readMore-button::after {
-    content: url(./img/icons/rightOrangeArrow.svg);
+    content: url(../img/icons/rightOrangeArrow.svg);
 }
 
 .pop-up {
@@ -151,7 +151,7 @@ h3 {
 .discover {
     display: flex;
     justify-content: center;
-    background: url(./img/headerBg.png), lightgray 50% / cover no-repeat;
+    background: url(../img/headerBg.png), lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
