@@ -274,7 +274,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(img/sliderBg.png);
+    background-image: url(../img/sliderBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 985px;
