@@ -100,7 +100,7 @@ h3 {
 }
 
 .readMore-button::after {
-    content: url(../img/icons/rightOrangeArrow.svg);
+    content: url(./img/icons/rightOrangeArrow.svg);
 }
 
 .pop-up {
