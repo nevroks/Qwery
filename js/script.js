@@ -9,23 +9,40 @@ document.querySelector(".Scroll-down__button").addEventListener("click", () => {
 
 ///----------------------------
 /// Slider script--------------
-let offset = 0
+let count = 0
+let width;
+const slides = document.querySelectorAll('.slider__line-slide')
 const sliderLine = document.querySelector('.slider__line')
+const rollSliser = () => {
+    sliderLine.style.right = width * count + 'px'
+}
+
+function changeSize() {
+    width = document.querySelector('.slider-wrapper').offsetWidth
+
+    sliderLine.style.width = width * slides.length + 'px'
+    slides.forEach(slide => {
+        slide.style.width = width + "px"
+    })
+    rollSliser()
+}
+changeSize()
+
+window.addEventListener('resize', changeSize)
+
 document.querySelector('.slider__next-btn').addEventListener('click', () => {
-    if (offset === 2962) {
-        offset = 0
-    } else {
-        offset = offset + 1481
+    count++
+    if (count >= slides.length) {
+        count = 0
     }
-    sliderLine.style.right = offset + 'px'
+    rollSliser()
 })
 document.querySelector('.slider__prev-btn').addEventListener('click', () => {
-    if (offset <= 0) {
-        offset = 2962
-    } else {
-        offset = offset - 1481
+    count--
+    if (count <= 0) {
+        count = slides.length - 1
     }
-    sliderLine.style.right = offset + 'px'
+    rollSliser()
 })
 
 ///----------------------------
