@@ -151,11 +151,7 @@ h3 {
 .discover {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     background: url(./img/headerBg.png), lightgray 50% / cover no-repeat;
-=======
-    background: url(https://nevroks.github.io/Qwery/img/header_bg.png), lightgray 50% / cover no-repeat;
->>>>>>> 50cc9ce5bdaf28820a64993b40867bd8e3444fcb
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -278,7 +274,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(./img/slider_bg.png);
+    background-image: url(./img/sliderBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 985px;
